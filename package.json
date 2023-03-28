@@ -1,0 +1,43 @@
+{
+  "name": "next-firebase-storybook-sentry",
+  "description": "A Starter template for Next.js, with Firebase, Storybook and Sentry.",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mdirshaddev/next-firebase-storybook-sentry.git"
+  },
+  "bugs": "https://github.com/mdirshaddev/next-firebase-storybook-sentry/issues",
+  "author": {
+    "name": "Md Irshad",
+    "email": "mdirshaddev@gmail.com",
+    "url": "https://mdirshaddev.github.io"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier -c .",
+    "format:write": "prettier -w ."
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.10",
+    "@types/react": "^18.0.30",
+    "@types/react-dom": "^18.0.11",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.36.0",
+    "eslint-config-next": "^13.2.4",
+    "postcss": "^8.4.21",
+    "prettier": "^2.8.7",
+    "prettier-plugin-tailwindcss": "^0.2.5",
+    "tailwindcss": "^3.2.7",
+    "typescript": "^5.0.2"
+  },
+  "dependencies": {
+    "next": "^13.2.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
