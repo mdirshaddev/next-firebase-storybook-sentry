@@ -88,6 +88,22 @@ export default function Introduction() {
             alt={"Node.js Static Code Analysis"}
           />
         </div>
+        <div>
+          <img
+            src={
+              "https://github.com/mdirshaddev/next-firebase-storybook-sentry/actions/workflows/storybook.yml/badge.svg"
+            }
+            alt={"Storybook Deployment"}
+          />
+        </div>
+        <div>
+          <img
+            src={
+              "https://github.com/mdirshaddev/next-firebase-storybook-sentry/actions/workflows/pages/pages-build-deployment/badge.svg"
+            }
+            alt={"Pages Deployment of Storybook"}
+          />
+        </div>
       </div>
       <p className='text-left !text-lg font-semibold'>
         This is a Starter template for Next.js, Firebase, Storybook and Sentry.
