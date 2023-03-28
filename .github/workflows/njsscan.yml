@@ -1,4 +1,4 @@
-name: njsscan sarif
+name: "Node.js Static Code Analysis 🛠️"
 
 on:
   push:
