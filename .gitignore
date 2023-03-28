@@ -6,3 +6,13 @@ node_modules
 
 # next
 .next
+
+# Sentry
+.sentryclirc
+
+# env
+.env
+.env.*
+
+# storybook
+storybook-static

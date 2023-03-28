@@ -1,0 +1,9 @@
+{
+  // Editors
+  "editor.tabSize": 2,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  // Files
+  "files.eol": "\n"
+}

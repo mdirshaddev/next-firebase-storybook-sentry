@@ -1,0 +1,45 @@
+name: "🚀 Deployment of Storybook 🌌"
+
+on:
+  push:
+    branches: ["main", "dev"]
+    paths:
+      - "docs/**/*.mdx"
+      - "src/**/*.stories.tsx"
+
+  pull_request:
+    branches: ["main", "dev"]
+    paths:
+      - "docs/**/*.mdx"
+      - "src/**/*.stories.tsx"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "☁️ Checkout repository"
+        uses: actions/checkout@v3
+
+      - name: "🔧 Setup Node.js"
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.14.2
+
+      - name: "🔧 Setup PNPM"
+        run: npm i -g pnpm@latest
+
+      - name: "📦 Install Dependencies"
+        run: pnpm install --lockfile=false
+
+      - name: "📦 Build Storybook"
+        run: pnpm build-storybook
+
+      - name: "🚀 Deploy Storybook"
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          publish_branch: storybook-static
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./storybook-static
+          commit_message: ${{ github.event.head_commit.message }}
+          enable_jekyll: false
+          keep_files: false
