@@ -63,7 +63,12 @@ export default function Introduction() {
   return (
     <div className='h-auto w-full text-center'>
       <div className='!mb-3'>
-        <img width={1200} height={900} src='/landing.png' alt='' />
+        <img
+          width={1200}
+          height={900}
+          src='https://raw.githubusercontent.com/mdirshaddev/icons-repository/main/next-firebase-storybook-sentry/landing.png'
+          alt=''
+        />
       </div>
       <h1>Starter Template with Storybook</h1>
       <div className='flex flex-row items-center justify-center gap-4'>
@@ -106,7 +111,9 @@ export default function Introduction() {
         Deployed on{" "}
         <img
           className='ml-2'
-          src={"/vercel.svg"}
+          src={
+            "https://raw.githubusercontent.com/mdirshaddev/icons-repository/main/next-firebase-storybook-sentry/vercel.svg"
+          }
           width={92}
           height={64}
           alt=''
