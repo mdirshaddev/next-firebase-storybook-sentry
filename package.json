@@ -1,0 +1,20 @@
+{
+  "name": "next-firebase-storybook-sentry",
+  "description": "A Starter template for Next.js, with Firebase, Storybook and Sentry.",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mdirshaddev/next-firebase-storybook-sentry.git"
+  },
+  "bugs": "https://github.com/mdirshaddev/next-firebase-storybook-sentry/issues",
+  "author": {
+    "name": "Md Irshad",
+    "email": "mdirshaddev@gmail.com",
+    "url": "https://mdirshaddev.github.io"
+  },
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {}
+}
