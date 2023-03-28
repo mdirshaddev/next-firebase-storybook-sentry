@@ -29,7 +29,7 @@ jobs:
         run: npm i -g pnpm@latest
 
       - name: "📦 Install Dependencies"
-        run: pnpm install
+        run: pnpm install --lockfile=false
 
       - name: "📦 Build Storybook"
         run: pnpm build-storybook
