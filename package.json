@@ -14,7 +14,12 @@
     "email": "mdirshaddev@gmail.com",
     "url": "https://mdirshaddev.github.io"
   },
-  "scripts": {},
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
   "devDependencies": {
     "@types/node": "^18.15.10",
     "@types/react": "^18.0.30",
