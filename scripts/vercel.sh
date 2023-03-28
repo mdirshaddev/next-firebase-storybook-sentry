@@ -1,18 +1,18 @@
 #!/bin/bash
 
-echo "VERCEL_ENV: $VERCEL_ENV"
+echo "VERCEL_GIT_COMMIT_REF: $VERCEL_GIT_COMMIT_REF"
 
-if [[ "$VERCEL_ENV" == "dependabot" ]] ; then
+if [[ "$VERCEL_GIT_COMMIT_REF" == "dependabot" ]] ; then
   # Don't build
   echo "🛑 - Build cancelled"
   exit 0;
 
-elif [[ "$VERCEL_ENV" == "feature" ]]; then
+elif [[ "$VERCEL_GIT_COMMIT_REF" == "feature" ]]; then
   # Don't build
   echo "🛑 - Build cancelled"
   exit 0;
 
-elif [[ "$VERCEL_ENV" == "storybook-static" ]]; then
+elif [[ "$VERCEL_GIT_COMMIT_REF" == "storybook-static" ]]; then
   # Don't build
   echo "🛑 - Build cancelled"
   exit 0;
