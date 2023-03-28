@@ -32,7 +32,7 @@ jobs:
         run: pnpm install --lockfile=false
 
       - name: "📦 Build Storybook"
-        run: pnpm build-storybook
+        run: pnpm build-storybook:ci
 
       - name: "🚀 Deploy Storybook"
         uses: peaceiris/actions-gh-pages@v3
